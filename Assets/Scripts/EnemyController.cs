@@ -14,11 +14,13 @@ public class EnemyController: MonoBehaviour {
   public int enemyHealth { get { return currentHealth; } }
 
   Rigidbody2D rigidbody2D;
+  Animator animator;
   
   void Start() {
     rigidbody2D = GetComponent<Rigidbody2D>();
     currentHealth = maxHealth;
     timer = changeTime;
+    animator = GetComponent<Animator>();
   }
 
 
@@ -33,8 +35,12 @@ public class EnemyController: MonoBehaviour {
     Vector2 position = rigidbody2D.position;
 
     if (vertical) {
+      animator.SetFloat("Move X", 0);
+      animator.SetFloat("Move Y", direction);
       position.y = position.y + Time.deltaTime * speed * direction;
     } else {
+      animator.SetFloat("Move X", direction);
+      animator.SetFloat("Move Y", 0);
       position.x = position.x + Time.deltaTime * speed * direction;
     }
     
