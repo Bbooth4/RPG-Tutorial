@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile: MonoBehaviour {
   Rigidbody2D rigidbody2D;
 
-  void Awake() {
+  void Start() {
     rigidbody2D = GetComponent<Rigidbody2D>();
   }
 

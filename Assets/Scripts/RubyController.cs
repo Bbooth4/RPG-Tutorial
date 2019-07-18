@@ -15,11 +15,11 @@ public class RubyController: MonoBehaviour {
   public int health { get { return currentHealth; } }
     
   Vector2 lookDirection = new Vector2(1,0);
-  Rigidbody2D rigidbody2d;
+  Rigidbody2D rigidbody2D;
   Animator animator;
 
   void Start() {
-    rigidbody2d = GetComponent<Rigidbody2D>();
+    rigidbody2D = GetComponent<Rigidbody2D>();
     currentHealth = maxHealth;
     animator = GetComponent<Animator>();
   }
@@ -39,9 +39,9 @@ public class RubyController: MonoBehaviour {
     animator.SetFloat("Look Y", lookDirection.y);
     animator.SetFloat("Speed", move.magnitude);
 
-    Vector2 position = rigidbody2d.position;
+    Vector2 position = rigidbody2D.position;
     position = position + move * speed * Time.deltaTime;
-    rigidbody2d.MovePosition(position);
+    rigidbody2D.MovePosition(position);
 
     if (isInvincible) {
       Debug.Log(isInvincible);
@@ -71,6 +71,7 @@ public class RubyController: MonoBehaviour {
       rigidbody2D.position + Vector2.up * 0.5f,
       Quaternion.identity
     );
+    Debug.Log(projectileObject);
 
     Projectile projectile = projectileObject.GetComponent<Projectile>();
     projectile.Launch(lookDirection, 300);
