@@ -74,7 +74,7 @@ public class RubyController: MonoBehaviour {
     Debug.Log(projectileObject);
 
     Projectile projectile = projectileObject.GetComponent<Projectile>();
-    projectile.Launch(lookDirection, 300);
+    projectile.Launch(lookDirection, 300f);
 
     animator.SetTrigger("Launch");
   }

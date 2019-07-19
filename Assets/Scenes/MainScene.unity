@@ -7397,11 +7397,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6654769843589489386, guid: 8afdf8d9edecaacdd86752b2d24da653,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5252032505395842776, guid: 8afdf8d9edecaacdd86752b2d24da653,
         type: 3}
       propertyPath: m_Name
@@ -7461,6 +7456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6654769843589489386, guid: 8afdf8d9edecaacdd86752b2d24da653,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8afdf8d9edecaacdd86752b2d24da653, type: 3}
@@ -7977,12 +7977,12 @@ PrefabInstance:
     - target: {fileID: 3247756130363222940, guid: d1c725c6de2d8cb1f964ac2e11d42311,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.407419
+      value: -7.44
       objectReference: {fileID: 0}
     - target: {fileID: 3247756130363222940, guid: d1c725c6de2d8cb1f964ac2e11d42311,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.57
+      value: 4.19
       objectReference: {fileID: 0}
     - target: {fileID: 3247756130363222940, guid: d1c725c6de2d8cb1f964ac2e11d42311,
         type: 3}
@@ -8029,6 +8029,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9159955397303292182, guid: d1c725c6de2d8cb1f964ac2e11d42311,
+        type: 3}
+      propertyPath: changeTime
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1928703172995568227, guid: d1c725c6de2d8cb1f964ac2e11d42311,
         type: 3}
       propertyPath: m_SortingOrder
@@ -8038,11 +8043,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteSortPoint
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9159955397303292182, guid: d1c725c6de2d8cb1f964ac2e11d42311,
-        type: 3}
-      propertyPath: changeTime
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1c725c6de2d8cb1f964ac2e11d42311, type: 3}
