@@ -8037,12 +8037,32 @@ PrefabInstance:
     - target: {fileID: 1928703172995568227, guid: d1c725c6de2d8cb1f964ac2e11d42311,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1928703172995568227, guid: d1c725c6de2d8cb1f964ac2e11d42311,
         type: 3}
       propertyPath: m_SpriteSortPoint
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928703172995568227, guid: d1c725c6de2d8cb1f964ac2e11d42311,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1928703172995568227, guid: d1c725c6de2d8cb1f964ac2e11d42311,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060729109387168816, guid: d1c725c6de2d8cb1f964ac2e11d42311,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060729109387168816, guid: d1c725c6de2d8cb1f964ac2e11d42311,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.50729674
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1c725c6de2d8cb1f964ac2e11d42311, type: 3}

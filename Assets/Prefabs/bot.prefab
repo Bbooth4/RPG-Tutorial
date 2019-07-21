@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9159955397303292182}
   - component: {fileID: 3012348484886860262}
   - component: {fileID: 4199743021575867803}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 606334877014642794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.1273, y: -8.505, z: 0}
-  m_LocalScale: {x: 0.6785908, y: 0.70360494, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

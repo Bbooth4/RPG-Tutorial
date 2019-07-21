@@ -10,6 +10,7 @@ public class EnemyController: MonoBehaviour {
   float timer;
   int direction = 1;
   int currentHealth;
+  bool broken = true;
 
   public int enemyHealth { get { return currentHealth; } }
 
@@ -25,6 +26,8 @@ public class EnemyController: MonoBehaviour {
 
 
   void Update() {
+    if (!broken) return;
+
     timer -= Time.deltaTime;
 
     if (timer < 0) {
@@ -53,5 +56,10 @@ public class EnemyController: MonoBehaviour {
     if (player != null) {
       player.ChangeHealth(-1);
     }
+  }
+
+  public void Fix() {
+    broken = false;
+    rigidbody2D.simulated = false;
   }
 }

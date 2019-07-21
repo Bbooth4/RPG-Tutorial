@@ -49,7 +49,7 @@ public class RubyController: MonoBehaviour {
       if (invincibleTimer < 0) isInvincible = false;
     }
 
-    if(Input.GetKeyDown(KeyCode.C)) {
+    if (Input.GetKeyDown(KeyCode.C)) {
       Launch();
     }
   }
@@ -71,7 +71,6 @@ public class RubyController: MonoBehaviour {
       rigidbody2D.position + Vector2.up * 0.5f,
       Quaternion.identity
     );
-    Debug.Log(projectileObject);
 
     Projectile projectile = projectileObject.GetComponent<Projectile>();
     projectile.Launch(lookDirection, 300f);
