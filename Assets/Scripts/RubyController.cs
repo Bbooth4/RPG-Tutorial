@@ -44,7 +44,6 @@ public class RubyController: MonoBehaviour {
     rigidbody2D.MovePosition(position);
 
     if (isInvincible) {
-      Debug.Log(isInvincible);
       invincibleTimer -= Time.deltaTime;
       if (invincibleTimer < 0) isInvincible = false;
     }
