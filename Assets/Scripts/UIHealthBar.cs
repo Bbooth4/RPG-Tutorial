@@ -14,7 +14,7 @@ public class UIHealthBar: MonoBehaviour {
   }
 
   void Start() {
-    originalSize = mask.rectTransform.rect.width;
+    if (mask) originalSize = mask.rectTransform.rect.width;
   }
 
   public void SetValue(float value) {				      
