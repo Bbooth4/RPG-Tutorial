@@ -60,7 +60,12 @@ public class RubyController: MonoBehaviour {
         LayerMask.GetMask("NPC")
       );
       if (hit.collider != null) {
-        Debug.Log("Raycast has hit the object " + hit.collider.gameObject);
+        NPC character = hit.collider.GetComponent<NPC>();
+        Debug.Log("Hit");
+        if (character != null) {
+          Debug.Log("Character");
+          character.DisplayDialog();
+        }
       }
     }
   }
